@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <FrameLayout
+            android:id="@+id/frame_layout1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp">
+
+            <ImageView
+                android:id="@+id/downloadImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/play"
+                android:tint="@color/white" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/frame_layout1"
+            android:layout_toRightOf="@id/frame_layout1"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:hint="Title"
+            android:textColorHint="@color/white"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/_2sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/size_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_text1"
+            android:layout_toEndOf="@id/frame_layout1"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_toRightOf="@id/frame_layout1"
+            android:hint="Size"
+            android:textColorHint="@color/white"
+            android:paddingLeft="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/datetime_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame_layout1"
+            android:layout_alignParentEnd="true"
+            android:text="DateTime"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/datetime_text_view"
+            android:layout_marginLeft="@dimen/_75sdp"
+            android:background="@drawable/dotted_line"
+            android:layerType="software" />
+    </RelativeLayout>
+
+
+</LinearLayout>

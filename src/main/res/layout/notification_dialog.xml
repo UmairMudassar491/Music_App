@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:padding="@dimen/_8sdp">
+
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Downloading start please check the notification bar"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#161616"
+        android:textSize="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_8sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+        <TextView
+            android:id="@+id/ok_button"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+    tools:context=".VideoPlayer">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingActionButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_16sdp"
+        app:menu_colorNormal="@color/colorPrimaryDark"
+        app:menu_colorRipple="@color/white"
+        app:menu_colorPressed="@color/colorPrimary"
+        app:menu_fab_label=""
+        app:menu_labels_cornerRadius="@dimen/_5sdp"
+        app:menu_fab_size="normal"
+        app:menu_openDirection="up"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Share"
+            app:fab_size="mini"
+            app:fab_colorRipple="@color/white"
+            app:fab_colorPressed="@color/colorPrimary"
+            android:src="@drawable/ic_share_black_24dp"
+            app:fab_colorNormal="@color/colorPrimary"/>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Download"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorRipple="@color/white"
+            app:fab_colorPressed="@color/colorPrimary"
+            android:src="@drawable/ic_file_download_white_24dp" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>

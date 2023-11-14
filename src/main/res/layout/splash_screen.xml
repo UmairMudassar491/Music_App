@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_20sdp"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@mipmap/logo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetching data...."
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/number_bar"
+        style="@style/NumberProgressBar_Twinkle_Night"
+        custom:progress_current="0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:visibility="invisible"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:background="@drawable/start_button"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/fl_adplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

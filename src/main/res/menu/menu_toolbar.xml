@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/downloaded_folder"
+        android:icon="@drawable/ic_folder_black_24dp"
+        android:title="Download Folder"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/download_file"
+        android:icon="@drawable/ic_file_download_white_24dp"
+        android:title="Download Folder"
+        app:showAsAction="always"/>
+
+</menu>

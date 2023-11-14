@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".AllVideos">
+
+
+    <EditText
+        android:id="@+id/emptyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:hint="Paste your video link here"
+        android:textColorHint="#B3B3B3"
+        android:inputType="text"
+        android:textColor="#E93F40"
+        android:paddingLeft="@dimen/_15sdp"
+        android:background="@drawable/url_edit_text_shape"
+        android:textSize="@dimen/_12sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_25sdp"
+        >
+
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:text="clear"
+            android:textSize="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            />
+        <Button
+            android:id="@+id/pasteButton"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:text="Paste"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/rounded_button"
+            />
+        <Button
+            android:id="@+id/downloadButton"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:text="Download"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/rounded_button"
+            />
+    </LinearLayout>
+</LinearLayout>
