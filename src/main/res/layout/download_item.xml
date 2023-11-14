@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="@dimen/_10sdp"
     android:layout_width="match_parent"
@@ -11,7 +12,8 @@
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center"
+        tools:ignore="UselessParent">
 
         <FrameLayout
             android:id="@+id/frame_layout1"
@@ -23,7 +25,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/ic_launcher"
+                android:importantForAccessibility="no" />
 
             <ImageView
                 android:layout_width="@dimen/_30sdp"
@@ -32,7 +35,8 @@
                 android:padding="@dimen/_5sdp"
                 android:scaleType="fitXY"
                 android:src="@drawable/play"
-                android:tint="@color/white" />
+                android:tint="@color/white"
+                android:importantForAccessibility="no" />
         </FrameLayout>
 
         <TextView
@@ -40,15 +44,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/frame_layout1"
-            android:layout_toRightOf="@id/frame_layout1"
-            android:layout_marginLeft="@dimen/_25sdp"
-            android:hint="Title"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:hint="@string/title"
             android:textColorHint="@color/white"
             android:maxLines="2"
-            android:paddingLeft="@dimen/_2sdp"
+            android:paddingStart="@dimen/_2sdp"
             android:textColor="@color/white"
             android:textSize="@dimen/_13sdp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:id="@+id/size_text2"
@@ -56,13 +60,13 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/title_text1"
             android:layout_toEndOf="@id/frame_layout1"
-            android:layout_marginLeft="@dimen/_25sdp"
-            android:layout_toRightOf="@id/frame_layout1"
-            android:hint="Size"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:hint="@string/size"
             android:textColorHint="@color/white"
-            android:paddingLeft="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
             android:textColor="@color/white"
-            android:textSize="@dimen/_11sdp" />
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:id="@+id/datetime_text_view"
@@ -70,15 +74,15 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/frame_layout1"
             android:layout_alignParentEnd="true"
-            android:text="DateTime"
+            android:text="@string/datetime"
             android:textColor="@color/white"
-            android:textSize="@dimen/_11sdp" />
+            android:textSize="@dimen/_15sdp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/_20sdp"
             android:layout_below="@id/datetime_text_view"
-            android:layout_marginLeft="@dimen/_75sdp"
+            android:layout_marginStart="@dimen/_75sdp"
             android:background="@drawable/dotted_line"
             android:layerType="software" />
     </RelativeLayout>

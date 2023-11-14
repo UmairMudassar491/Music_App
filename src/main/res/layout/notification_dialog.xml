@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,28 +12,31 @@
         android:id="@+id/notification_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Downloading start please check the notification bar"
+        android:text="@string/downloading_start_please_check_the_notification_bar"
         android:layout_marginTop="@dimen/_5sdp"
         android:textColor="#161616"
         android:textSize="@dimen/_15sdp"
-        android:paddingLeft="@dimen/_8sdp"/>
+        android:paddingStart="@dimen/_8sdp"
+        tools:ignore="RtlSymmetry" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="right"
-        android:layout_marginRight="@dimen/_5sdp"
-        android:layout_marginTop="@dimen/_10sdp">
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        tools:ignore="RtlHardcoded">
         <TextView
             android:id="@+id/ok_button"
             android:clickable="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ok"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:text="@string/ok"
             android:textSize="@dimen/_15sdp"
             android:textStyle="bold"
             android:layout_marginLeft="@dimen/_10sdp"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorAccent"
+            android:focusable="true" />
     </LinearLayout>
 
 

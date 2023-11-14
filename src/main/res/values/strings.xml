@@ -7,5 +7,23 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="paste_your_video_link_here">Paste your video link here</string>
+    <string name="clear">clear</string>
+    <string name="paste">Paste</string>
+    <string name="download">Download</string>
+    <string name="ad">Ad</string>
+    <string name="ad_call">ad_call</string>
+    <string name="cancel">Cancel</string>
+    <string name="title">Title</string>
+    <string name="duration">Duration</string>
+    <string name="size">Size</string>
+    <string name="datetime">DateTime</string>
+    <string name="channel">Channel</string>
+    <string name="owner">Owner</string>
+    <string name="todo">TODO</string>
+    <string name="downloading_start_please_check_the_notification_bar">Downloading start please check the notification bar</string>
+    <string name="ok">Ok</string>
+    <string name="start">Start</string>
+    <string name="fetching_data">Fetching data....</string>
 
 </resources>
